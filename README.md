@@ -1,122 +1,108 @@
+# DocumentQna
 
-DocumentQna is a Spring Boot-based application designed to manage documents and facilitate question-answering (QnA) functionalities. It provides RESTful APIs for user authentication, document ingestion, retrieval, and QnA services.
+DocumentQna is a **Spring Boot**-based application designed to manage documents and facilitate question-answering (QnA) functionalities. It provides RESTful APIs for user authentication, document ingestion, retrieval, and QnA services.
 
-Features
-User Authentication: Secure user registration and login using JWT tokens.
+---
 
-Document Management: Upload, retrieve, and manage documents efficiently.
+## Features
 
-QnA Module: Ask questions related to uploaded documents and receive relevant answers.
+- **User Authentication:** Secure user registration and login using JWT tokens.
+- **Document Management:** Upload, retrieve, and manage documents efficiently.
+- **QnA Module:** Ask questions related to uploaded documents and receive relevant answers.
+- **Modular Architecture:** Separation of concerns with distinct layers for controllers, services, and repositories.
+- **Swagger Integration:** Interactive API documentation for easy testing and integration.
+- **Docker Support:** Containerized application setup using Docker and Docker Compose.
 
-Modular Architecture: Separation of concerns with distinct layers for controllers, services, and repositories.
+---
 
-Swagger Integration: Interactive API documentation for easy testing and integration.
+## Technologies Used
 
-Docker Support: Containerized application setup using Docker and Docker Compose.
+- Java 17
+- Spring Boot 3.x
+- Spring Security
+- Spring Data JPA
+- Hibernate
+- MySQL
+- Swagger (Springfox)
+- Docker & Docker Compose
+- JUnit & Mockito
 
-Technologies Used
-Java 17
+---
 
-Spring Boot 3.x
+## Getting Started
 
-Spring Security
+### Prerequisites
 
-Spring Data JPA
+- Java 17 or higher
+- Maven 3.6+
+- MySQL Server
+- Docker & Docker Compose (optional for containerization)
 
-Hibernate
+---
 
-MySQL
+### Installation
 
-Swagger (Springfox)
+1. **Clone the repository:**
 
-Docker & Docker Compose
+   ```bash
+   git clone https://github.com/lllakshay/DocumentQna.git
+   cd DocumentQna
 
-JUnit & Mockito
-Reddit
-+4
-Donnacha Forde
-+4
-Medium
-+4
-Stack Overflow
 
-Getting Started
-Prerequisites
-Java 17 or higher
-
-Maven 3.6+
-
-MySQL Server
-
-Docker & Docker Compose (optional for containerization)
-Donnacha Forde
-
-Installation
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/lllakshay/DocumentQna.git
-cd DocumentQna
-Configure the database:
+## Configure the Database
 
 Update the application.properties file with your MySQL credentials:
 
-properties
-Copy
-Edit
 spring.datasource.url=jdbc:mysql://localhost:3306/documentqna
 spring.datasource.username=your_username
 spring.datasource.password=your_password
-Build the project:
 
-bash
-Copy
-Edit
+---
+
+## Build the Project
+
 mvn clean install
-Run the application:
 
-bash
-Copy
-Edit
+---
+
+## Run the Application
+
 mvn spring-boot:run
-The application will start on http://localhost:8080.
 
-Docker Deployment (Optional)
-Build the Docker image:
+The application will start on: http://localhost:8080
 
-bash
-Copy
-Edit
+---
+
+## Docker Deployment (Optional)
+
+### Build the Docker Image
+
 docker build -t documentqna .
-Run the Docker container:
 
-bash
-Copy
-Edit
+### Run the Docker Container
+
 docker run -p 8080:8080 documentqna
-Using Docker Compose:
 
-If you have a docker-compose.yml file:
+### Using Docker Compose
 
-bash
-Copy
-Edit
+If you have a docker-compose.yml file, start the services with:
+
 docker-compose up --build
-API Documentation
+
+---
+
+## API Documentation
+
 Swagger UI is available at:
 
-bash
-Copy
-Edit
 http://localhost:8080/swagger-ui.html
-This provides an interactive interface to test and explore the available APIs.
 
-Project Structure
-plaintext
-Copy
-Edit
+Use this interactive interface to test and explore the available APIs easily.
+
+---
+
+## Project Structure
+
 DocumentQna/
 ├── src/
 │   ├── main/
@@ -131,11 +117,22 @@ DocumentQna/
 │   │       └── static/
 ├── pom.xml
 └── README.md
-Contributing
+
+---
+
+## Contributing
+
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-License
+---
+
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-For any inquiries or feedback, please contact your.surajlakshay@gmail.com
+---
+
+## Contact
+
+For any inquiries or feedback, please contact:  
+surajlakshay@gmail.com
