@@ -1,4 +1,4 @@
-DocumentQna
+
 DocumentQna is a Spring Boot-based application designed to manage documents and facilitate question-answering (QnA) functionalities. It provides RESTful APIs for user authentication, document ingestion, retrieval, and QnA services.
 
 Features
