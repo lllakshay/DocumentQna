@@ -65,8 +65,8 @@ spring.datasource.password=your_password
 
 ## Build the Project
 
-```bash
-mvn clean install
+   ```bash
+   mvn clean install
 
 ---
 
@@ -76,55 +76,55 @@ mvn spring-boot:run
 
 The application will start on: 
 
-```bash
-http://localhost:8080
+   ```bash
+   http://localhost:8080
 
 ---
 
 ## Docker Deployment (Optional)
 
 ### Build the Docker Image
-```bash
-docker build -t documentqna .
+   ```bash
+   docker build -t documentqna .
 
 ### Run the Docker Container
-```bash
-docker run -p 8080:8080 documentqna
+   ```bash
+   docker run -p 8080:8080 documentqna
 
 ### Using Docker Compose
 
 If you have a docker-compose.yml file, start the services with:
-```bash
-docker-compose up --build
+   ```bash
+   docker-compose up --build
 
 ---
 
 ## API Documentation
 
 Swagger UI is available at:
-```bash
-http://localhost:8080/swagger-ui.html
+   ```bash
+   http://localhost:8080/swagger-ui.html
 
 Use this interactive interface to test and explore the available APIs easily.
 
 ---
 
 ## Project Structure
-```bash
-DocumentQna/
-├── src/
-│   ├── main/
-│   │   ├── java/com/docmanagement/
-│   │   │   ├── config/             # Security and Swagger configurations
-│   │   │   ├── controller/         # REST controllers
-│   │   │   ├── service/            # Service interfaces and implementations
-│   │   │   ├── repository/         # JPA repositories
-│   │   │   └── model/              # Entity classes
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── static/
-├── pom.xml
-└── README.md
+   ```bash
+   DocumentQna/
+   ├── src/
+   │   ├── main/
+   │   │   ├── java/com/docmanagement/
+   │   │   │   ├── config/             # Security and Swagger configurations
+   │   │   │   ├── controller/         # REST controllers
+   │   │   │   ├── service/            # Service interfaces and implementations
+   │   │   │   ├── repository/         # JPA repositories
+   │   │   │   └── model/              # Entity classes
+   │   │   └── resources/
+   │   │       ├── application.properties
+   │   │       └── static/
+   ├── pom.xml
+   └── README.md
 
 ---
 
