@@ -65,6 +65,7 @@ spring.datasource.password=your_password
 
 ## Build the Project
 
+```bash
 mvn clean install
 
 ---
@@ -73,24 +74,27 @@ mvn clean install
 
 mvn spring-boot:run
 
-The application will start on: http://localhost:8080
+The application will start on: 
+
+```bash
+http://localhost:8080
 
 ---
 
 ## Docker Deployment (Optional)
 
 ### Build the Docker Image
-
+```bash
 docker build -t documentqna .
 
 ### Run the Docker Container
-
+```bash
 docker run -p 8080:8080 documentqna
 
 ### Using Docker Compose
 
 If you have a docker-compose.yml file, start the services with:
-
+```bash
 docker-compose up --build
 
 ---
@@ -98,7 +102,7 @@ docker-compose up --build
 ## API Documentation
 
 Swagger UI is available at:
-
+```bash
 http://localhost:8080/swagger-ui.html
 
 Use this interactive interface to test and explore the available APIs easily.
@@ -106,7 +110,7 @@ Use this interactive interface to test and explore the available APIs easily.
 ---
 
 ## Project Structure
-
+```bash
 DocumentQna/
 ├── src/
 │   ├── main/
