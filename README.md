@@ -65,7 +65,6 @@ spring.datasource.password=your_password
 
 ## Build the Project
 
-   ```bash
    mvn clean install
 
 ---
